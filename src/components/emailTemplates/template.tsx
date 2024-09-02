@@ -1,3 +1,4 @@
+import { AppConfig } from "@/lib/config";
 import {
     Body,
     Column,
@@ -15,36 +16,29 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-interface WelcomeEmailProps {
-    userFirstname: string;
-}
-
-export const WelcomeEmail = ({
-    userFirstname,
-}: WelcomeEmailProps) => (
+export const WelcomeEmail = (config: AppConfig) => (
     <Html>
         <Head />
         <Preview>
-            The sales intelligence platform that helps you uncover qualified leads.
+            {config.email.preview}
         </Preview>
         <Body style={main}>
             <Container style={container}>
                 <Img
-                    src={`https://pocketbase.sapphirenw.com/api/files/2v0pb1wl1ionpe7/l813wya63agry6x/resume_dark_266x100_Wc2nOoXVgB.png`}
-                    width="150"
-                    alt="AIThing"
+                    src={config.image.dark}
+                    width={Number(config.image.width)}
+                    height={Number(config.image.height)}
+                    alt={config.image.alt}
                     style={logo}
                 />
                 <Text style={paragraph}>
-                    Hello {userFirstname},
+                    {config.email.header}
                 </Text>
                 <Text style={paragraph}>
-                    Thank you for signing up on the waitlist for Resume by AIThing! We hope that you are as excited as we are to try out this product. We hope to have further updates as soon as possible. In the meantime, follow our social media pages to stay up-to-date on any current developments.
+                    {config.email.body}
                 </Text>
                 <Text style={paragraph}>
-                    Best,
-                    <br />
-                    The AIThing team
+                    {config.email.footer}
                 </Text>
                 <Hr style={hr} />
                 <Tailwind>
@@ -111,10 +105,6 @@ const AIThingFooter = () => {
         </table>
     </Section>
 }
-
-WelcomeEmail.PreviewProps = {
-    userFirstname: "Alan",
-} as WelcomeEmailProps;
 
 export default WelcomeEmail;
 

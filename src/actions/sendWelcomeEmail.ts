@@ -3,6 +3,7 @@
 import { Resend } from 'resend';
 import { WelcomeEmail } from '@/components/emailTemplates/template';
 import PocketBase from 'pocketbase';
+import { getConfig } from '@/lib/config';
 
 export async function addToWaitlist(
     email: string,
@@ -22,12 +23,15 @@ export async function addToWaitlist(
             throw new Error("Failed to authenticate with pocketbase")
         }
 
+        // get the app config
+        const config = getConfig()
+
         // send the welcome email
         const resp = await resend.emails.send({
             from: process.env.SEND_EMAIL!,
             to: email,
             subject: process.env.EMAIL_SUBJECT!,
-            react: WelcomeEmail({ userFirstname: name }),
+            react: WelcomeEmail(config),
         });
         console.log(resp)
 

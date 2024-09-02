@@ -16,6 +16,12 @@ export type AppConfig = {
         height: string
         width: string
     }
+    email: {
+        preview: string
+        header: string
+        body: string
+        footer: string
+    }
     keywords: string[]
     content: ContentItemProps[]
 }
