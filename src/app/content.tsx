@@ -1,6 +1,5 @@
 import { Separator } from "@/components/ui/separator"
 import { getConfig } from "@/lib/config"
-import Image from "next/image"
 
 export default function Content() {
     const config = getConfig()
@@ -8,7 +7,7 @@ export default function Content() {
     return <div className="z-50 text-center p-4 md:p-8 flex flex-col justify-between h-full w-full">
         <div className="z-50">
             <div className="flex justify-between items-center">
-                <Image
+                <img
                     src={config.image.light}
                     alt={config.image.alt}
                     width={Number(config.image.width) * 0.75}

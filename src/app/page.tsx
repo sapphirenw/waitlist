@@ -1,4 +1,3 @@
-import Image from "next/image"
 import FormClient from "./form";
 import Content from "./content";
 import { getConfig } from "@/lib/config";
@@ -30,7 +29,7 @@ export default function Home({
         </div>
         <div className="p-4 md:p-0 md:absolute md:bottom-4 md:right-4">
           <a target="_blank" href="https://aithing.co">
-            <Image
+            <img
               src="https://pocketbase.sapphirenw.com/api/files/2v0pb1wl1ionpe7/kf77rafap2dwxtx/aithing_dark_340x100_dsCNq2ggDV.png"
               alt="AIThing"
               width={85}
