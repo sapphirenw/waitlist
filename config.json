@@ -1,0 +1,49 @@
+{
+    "title": "Resume by AIThing",
+    "desc": "An automatic resume optimizer based on your personal information and job postings.",
+    "url": "http://localhost:3000",
+    "tagline": "An optimization tool for how the job hunt works today.",
+    "primaryColor": "238 55% 46%",
+    "secondaryColor": "330 81% 60%",
+    "image": {
+        "light": "https://pocketbase.sapphirenw.com/api/files/2v0pb1wl1ionpe7/hvmw06pzu13cjej/resume_white_269x100_N7CoQO4aCO.png",
+        "dark": "https://pocketbase.sapphirenw.com/api/files/2v0pb1wl1ionpe7/l813wya63agry6x/resume_dark_266x100_Wc2nOoXVgB.png",
+        "alt": "Resume by AIThing",
+        "height": "50",
+        "width": "133"
+    },
+    "keywords": [
+        "AI development platform",
+        "Personalized resume builder",
+        "AI-powered job matching",
+        "Intelligent cover letter generator",
+        "Career optimization",
+        "AI recruitment tools",
+        "Automated job application assistant",
+        "Smart resume tailoring",
+        "AI-driven career advancement",
+        "Personalized job search"
+    ],
+    "content": [
+        {
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-scan-qr-code'><path d='M17 12v4a1 1 0 0 1-1 1h-4'/><path d='M17 3h2a2 2 0 0 1 2 2v2'/><path d='M17 8V7'/><path d='M21 17v2a2 2 0 0 1-2 2h-2'/><path d='M3 7V5a2 2 0 0 1 2-2h2'/><path d='M7 17h.01'/><path d='M7 21H5a2 2 0 0 1-2-2v-2'/><rect x='7' y='7' width='5' height='5' rx='1'/></svg>",
+            "title": "Dynamic Content Parsing",
+            "text": "We parse your documents, websites, and more into categories and subjects to efficiently track what you have accomplished in your career."
+        },
+        {
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-file-sliders'><path d='M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z'/><path d='M14 2v4a2 2 0 0 0 2 2h4'/><path d='M8 12h8'/><path d='M10 11v2'/><path d='M8 17h8'/><path d='M14 16v2'/></svg>",
+            "title": "Custom Built Resumes",
+            "text": "We match your specific experiences against job postings to generate the optimal resume complete with keyword matching for your job search."
+        },
+        {
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-layout-template'><rect width='18' height='7' x='3' y='3' rx='1'/><rect width='9' height='7' x='3' y='14' rx='1'/><rect width='5' height='7' x='16' y='14' rx='1'/></svg>",
+            "title": "Personalization and Tracking",
+            "text": "After, generate personalized cover letters, answer specific job posting questions, and track your application status through our portal."
+        },
+        {
+            "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-sticker'><path d='M15.5 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z'/><path d='M14 3v4a2 2 0 0 0 2 2h4'/><path d='M8 13h.01'/><path d='M16 13h.01'/><path d='M10 16s.8 1 2 1c1.3 0 2-1 2-1'/></svg>",
+            "title": "Efficient and Ephemeral",
+            "text": "Finally, sit back and enjoy your new job! Our pay as you go pricing model ensures that you have no commitments once you find your new job."
+        }
+    ]
+}

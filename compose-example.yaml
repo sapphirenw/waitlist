@@ -1,0 +1,20 @@
+services:
+  waitlist:
+    build:
+      dockerfile: Dockerfile
+    container_name: waitlist-webapp
+    volumes:
+      - ./config.json:/app/config.json
+    environment:
+      RESEND_API_KEY: ""
+      POCKETBASE_USER: ""
+      POCKETBASE_PASSWORD: ""
+      SEND_EMAIL: ""
+      EMAIL_SUBJECT: ""
+      WAITLIST_KEY: ""
+      NEXT_PUBLIC_ANALYTICS_ID: ""
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
