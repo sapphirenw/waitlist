@@ -17,7 +17,7 @@ export async function addToWaitlist(
         const resend = new Resend(process.env.RESEND_API_KEY);
 
         // setup pocketbase
-        const pb = new PocketBase('https://pocketbase.sapphirenw.com');
+        const pb = new PocketBase(process.env.POCKETBASE_URL);
         await pb.collection('users').authWithPassword(process.env.POCKETBASE_USER!, process.env.POCKETBASE_PASSWORD!);
         if (!pb.authStore.isValid) {
             throw new Error("Failed to authenticate with pocketbase")

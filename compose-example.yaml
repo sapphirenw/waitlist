@@ -13,6 +13,7 @@ services:
       EMAIL_SUBJECT: ""
       WAITLIST_KEY: ""
       NEXT_PUBLIC_ANALYTICS_ID: ""
+      POCKETBASE_URL: ""
     logging:
       driver: "json-file"
       options:
